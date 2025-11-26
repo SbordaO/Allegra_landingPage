@@ -22,10 +22,8 @@ export function ImageGallery() {
       <div className="container mx-auto w-full max-w-[1440px] px-8 md:px-16">
         <h2 className="font-serif text-4xl md:text-5xl text-center mb-12 md:mb-16 text-deep-red">Galería de Momentos</h2>
         <div className="flex flex-col items-center">
-          <div className="relative w-full max-w-4xl mb-4">
-            <div className="aspect-w-16 aspect-h-9">
-              <img src={images[currentIndex]} alt="Selected" className="w-full h-full object-cover rounded-lg shadow-lg" />
-            </div>
+          <div className="relative w-full max-w-4xl mb-4 h-[400px]">
+            <img src={images[currentIndex]} alt="Selected" className="w-full h-[400px] object-cover rounded-lg shadow-lg" />
             <div className="absolute top-1/2 left-2 md:left-4 transform -translate-y-1/2">
               <button onClick={goToPrevious} className="bg-white bg-opacity-50 rounded-full p-2 hover:bg-opacity-75 transition">
                 <ChevronLeft className="text-pine-green" />
