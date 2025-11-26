@@ -1,11 +1,6 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import carrete1 from '../../images/carrete1.png';
-import carrete2 from '../../images/carrete2.png';
-import carrete3 from '../../images/carrete3.png';
-import carrete4 from '../../images/carrete4.png';
-
-const images = [carrete1, carrete2, carrete3, carrete4];
+const images = ['/images/carrete1.png', '/images/carrete2.png', '/images/carrete3.png', '/images/carrete4.png'];
 
 export function ImageGallery() {
   const [currentIndex, setCurrentIndex] = useState(0);

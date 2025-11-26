@@ -1,25 +1,21 @@
 import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import ImageModal from "@/components/ui/ImageModal"
-import munecoNieveImage from "../../images/muñeco_nieve.png"
-import tejidoImage from "../../images/tejido_mano.png"
-import sacoImage from "../../images/saco.png"
-
 const products = [
   {
     title: "Chaleco tejido",
     description: "Mantente abrigado con nuestros Chalecos tejidos a mano.",
-    image: tejidoImage,
+    image: "/images/tejido_mano.png",
   },
   {
     title: "Muñeco de nieve",
     description: "Adornos únicos para un árbol mágico.",
-    image: munecoNieveImage,
+    image: "/images/muneco_nieve.png",
   },
   {
     title: "Saco tejido",
     description: "Saco estilo tipo capa para la temporada de frío.",
-    image: sacoImage,
+    image: "/images/saco.png",
   },
 ]
 
