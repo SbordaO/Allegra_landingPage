@@ -9,7 +9,7 @@ export function Hero() {
       {/* Right Column: Image */}
       <div 
         className="w-full md:w-1/3 h-64 md:h-auto bg-cover bg-center order-1 md:order-2"
-        style={{ backgroundImage: "url('/images/navidad.jpeg')" }}
+        style={{ backgroundImage: "url('/images/hero.png')" }}
       >
       </div>
     </section>
