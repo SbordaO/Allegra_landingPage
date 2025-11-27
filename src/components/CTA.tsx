@@ -9,7 +9,7 @@ export function CTA() {
           Ponte en contacto para pedidos personalizados o explora nuestra colección completa para encontrar el regalo perfecto para tus seres queridos (¡o para ti!).
         </p>
         <Button asChild className="inline-block bg-soft-gold text-pine-green no-underline py-4 px-12 rounded-full font-bold transition-colors hover:bg-[#c8a02a]">
-          <a href="#">Comprar Ahora</a>
+          <a href="#https://www.instagram.com/astrid.ojeda.24/">Contactanos ahora</a>
         </Button>
       </div>
     </section>
