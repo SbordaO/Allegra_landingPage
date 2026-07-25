@@ -1,78 +1,52 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-    darkMode: ["class"],
-    content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
-  	extend: {
+    extend: {
       colors: {
-        'deep-red': '#A52A2A',
-        'warm-cream': '#F5F5DC',
-        'pine-green': '#293d34',
-        'soft-gold': '#D4AF37',
-        'white': '#FFFFFF',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
-        card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))'
-        },
-        popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))'
-        },
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))'
-        },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))'
-        },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))'
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))'
-        },
-        destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))'
-        },
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        chart: {
-          '1': 'hsl(var(--chart-1))',
-          '2': 'hsl(var(--chart-2))',
-          '3': 'hsl(var(--chart-3))',
-          '4': 'hsl(var(--chart-4))',
-          '5': 'hsl(var(--chart-5))'
+        allegra: {
+          green: "#1B4332",       // Verde oscuro bosque (Principal)
+          wine: "#8B0000",        // Rojo vino (Acento cálido)
+          gold: "#D4AF37",        // Dorado (Detalles premium)
+          goldLight: "#F3E5AB",   // Dorado suave (Fondos y badges)
+          snow: "#FAFAFA",        // Blanco nieve (Tarjetas y contrastes)
+          cream: "#FDFBF7",       // Crema (Fondo general del sitio)
+          beige: "#E5DCC3",       // Beige (Bordes y separadores cálidos)
+          dark: "#0F281E",        // Variante extra oscura para textos
         }
       },
       fontFamily: {
-        sans: ['Lato', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
       },
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		},
-  	}
+      boxShadow: {
+        'premium': '0 10px 30px -10px rgba(27, 67, 50, 0.08)',
+        'lift': '0 20px 40px -15px rgba(27, 67, 50, 0.15)',
+        'gold-glow': '0 0 25px -5px rgba(212, 175, 55, 0.3)',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-6px)' },
+        }
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'slide-up': 'slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'float-slow': 'float 4s ease-in-out infinite',
+      }
+    },
   },
-  plugins: [require("tailwindcss-animate")],
-};
+  plugins: [],
+}
