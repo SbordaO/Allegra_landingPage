@@ -10,7 +10,7 @@ export const About: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-lift aspect-[4/3] bg-allegra-beige/40 border border-allegra-beige">
               <img 
-                src="../../public/images/muneco_nieve" 
+                src="../../public/images/carrete1.png" 
                 alt="Manos artesanas en el taller de Allegra" 
                 className="w-full h-full object-cover"
               />

@@ -19,19 +19,19 @@ const DEFAULT_CATEGORIES: CategoryItem[] = [
     id: 1,
     title: "Centros de Mesa & Coronas",
     subtitle: "Follaje natural y acabados eternos",
-    image: "/images/categoria-coronas.jpg",
+    image: "/images/categoria-coronas.png",
   },
   {
     id: 2,
     title: "Iluminación & Candelabros",
     subtitle: "Calidez en latón y cerámica",
-    image: "/images/categoria-velas.jpg",
+    image: "/images/categoria-velas.png",
   },
   {
     id: 3,
     title: "Textiles de Lino & Algodón",
     subtitle: "Texturas orgánicas para tu mesa",
-    image: "/images/categoria-textiles.jpg",
+    image: "/images/categoria-textiles.png",
   }
 ];
 

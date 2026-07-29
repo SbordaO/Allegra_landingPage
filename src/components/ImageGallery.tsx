@@ -25,7 +25,7 @@ export const ImageGallery: React.FC = () => {
           {/* Foto 1: Grande Izquierda */}
           <div className="md:col-span-7 row-span-2 relative rounded-2xl overflow-hidden shadow-premium group cursor-pointer bg-allegra-beige/30">
             <img 
-              src="/images/galeria-1.jpg" 
+              src="/images/galeria-1.png" 
               alt="Ambiente navideño Allegra" 
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
@@ -39,7 +39,7 @@ export const ImageGallery: React.FC = () => {
           {/* Foto 2: Arriba Derecha */}
           <div className="md:col-span-5 row-span-1 relative rounded-2xl overflow-hidden shadow-premium group cursor-pointer bg-allegra-beige/30">
             <img 
-              src="/images/galeria-2.jpg" 
+              src="/images/galeria-2.png" 
               alt="Detalle artesanal" 
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
@@ -49,7 +49,7 @@ export const ImageGallery: React.FC = () => {
           {/* Foto 3: Abajo Derecha */}
           <div className="md:col-span-5 row-span-2 relative rounded-2xl overflow-hidden shadow-premium group cursor-pointer bg-allegra-beige/30">
             <img 
-              src="/images/galeria-3.jpg" 
+              src="/images/galeria-3.png" 
               alt="Corona de adviento en puerta" 
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
